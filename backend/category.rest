@@ -1,0 +1,22 @@
+GET http://localhost:5000/category-menu
+###
+
+GET http://localhost:5000/role/1
+###
+
+POST http://localhost:5000/category-menu
+Content-Type: application/json
+
+{
+    "name" : "DESSERT",
+    "userId": 0
+}
+###
+PATCH  http://localhost:5000/role/3
+Content-Type: application/json
+
+{
+    "name" : "admin up"
+}
+###
+DELETE http://localhost:5000/role/3

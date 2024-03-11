@@ -1,0 +1,30 @@
+GET http://localhost:5000/user
+###
+
+GET http://localhost:5000/user/f96eb41f-39a7-4641-a869-849dd55d804e
+###
+
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "name" : "lutfi agisna",
+    "email" : "lutf8364@gmail.com",
+    "noHp" : "081953921564",
+    "password" : "agisna06",
+    "confirmPassword" : "agisna06",
+    "roleId" : 1
+}
+###
+PATCH http://localhost:5000/user/f96eb41f-39a7-4641-a869-849dd55d804e
+Content-Type: application/json
+
+{
+    "name" : "lutfi agisna up",
+    "email" : "lutf8363@gmail.com up",
+    "noHp" : "081953991564 up",
+    "password" : "agisna061",
+    "roleId" : 1
+}
+###
+DELETE http://localhost:5000/user/f96eb41f-39a7-4641-a869-849dd55d804e
